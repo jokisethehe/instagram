@@ -15,24 +15,26 @@ const accounts = {
         fullName: 'anaa',
         profilePic: 'assets/first/foto1.png',
         bio: "Can't decide...\n@azkamsptra_",
-        bgm: 'assets/first/sza-good-days.mp3', // SET MUSIC PATH AKUN 1
-        postsCount: 1,
+        bgm: 'assets/first/sza-good-days.mp3', 
+        postsCount: 3,
         followers: '1.209',
         following: '1.033',
         stories: [
             { username: 'Your story', img: 'assets/first/foto1.png', isYourStory: true },
-            { username: 'cca197_', img: 'https://randomuser.me/api/portraits/women/44.jpg', isLive: true },
-            { username: 'slowlly___', img: 'https://randomuser.me/api/portraits/women/68.jpg' },
-            { username: 'pitriahoktav', img: 'https://randomuser.me/api/portraits/women/22.jpg' },
-            { username: 'anaa.mov', img: 'https://randomuser.me/api/portraits/women/12.jpg' }
+            { username: 'putri.ayuu', img: 'assets/teman1.png', isLive: true },
+            { username: 'salsabila_99', img: 'assets/teman2.png' },
+            { username: 'dimas.pratama', img: 'assets/teman3.png' },
+            { username: 'nisa.imut', img: 'assets/teman4.png' },
+            { username: 'cintiaa.x', img: 'assets/teman5.png' },
+            { username: 'rendy_boy', img: 'assets/teman6.png' }
         ],
         dms: [
-            { user: 'cca197_', img: 'https://randomuser.me/api/portraits/women/44.jpg', msg: 'Foto yang tadi bagus!', time: '2h', note: 'Ready for...' },
-            { user: 'slowlly___', img: 'https://randomuser.me/api/portraits/women/68.jpg', msg: 'Hahahaha bener juga', time: '5h', note: 'I\'ll drop dead' },
-            { user: 'anaa.mov', img: 'https://randomuser.me/api/portraits/women/12.jpg', msg: 'P', time: '1h', note: 'mau punya cowo ga sii' },
-            { user: 'ocaaa', img: 'https://randomuser.me/api/portraits/women/33.jpg', msg: 'Sent a reel by azkamsptra_', time: '7h', note: 'duh mas boy' },
-            { user: 'anjay mabar', img: 'https://randomuser.me/api/portraits/men/32.jpg', msg: '4+ new messages', time: '16h', isUnread: true },
-            { user: 'Picaaaa', img: 'https://randomuser.me/api/portraits/women/17.jpg', msg: '🙄🙄🙄🙄🙄🙄', time: '5d' }
+            { user: 'putri.ayuu', img: 'assets/teman1.png', msg: 'Foto yang tadi bagus!', time: '2h', note: 'Ready for...' },
+            { user: 'salsabila_99', img: 'assets/teman2.png', msg: 'Hahahaha bener juga', time: '5h', note: 'I\'ll drop dead' },
+            { user: 'dimas.pratama', img: 'assets/teman3.png', msg: 'P', time: '1h', note: 'mau punya cowo ga sii' },
+            { user: 'nisa.imut', img: 'assets/teman4.png', msg: 'Sent a reel by azkamsptra_', time: '7h', note: 'duh mas boy' },
+            { user: 'cintiaa.x', img: 'assets/teman5.png', msg: '4+ new messages', time: '16h', isUnread: true },
+            { user: 'rendy_boy', img: 'assets/teman6.png', msg: '🙄🙄🙄🙄🙄🙄', time: '5d' }
         ],
         posts: [
             {
@@ -82,6 +84,30 @@ const accounts = {
                         ]
                     }
                 ]
+            },
+            {
+                id: 'p1',
+                username: 'putri.ayuu',
+                profilePic: 'assets/teman1.png',
+                type: 'standard',
+                music: 'NIKI · Take A Chance With Me',
+                likes: '852',
+                isLiked: false,
+                caption: 'weekend vibes 🌿',
+                time: '2 HOURS AGO',
+                slides: [{ img: 'assets/second/foto4.jpg', elements: [] }]
+            },
+            {
+                id: 'p2',
+                username: 'salsabila_99',
+                profilePic: 'assets/teman2.png',
+                type: 'standard',
+                music: 'NewJeans · Ditto',
+                likes: '1.102',
+                isLiked: false,
+                caption: 'cozy afternoon ☕',
+                time: '5 HOURS AGO',
+                slides: [{ img: 'assets/second/foto5.jpg', elements: [] }]
             }
         ],
         highlights: [
@@ -91,35 +117,35 @@ const accounts = {
     },
     'anaa.mov': {
         username: 'anaa.mov',
-        fullName: 'Sesa',
-        profilePic: 'https://randomuser.me/api/portraits/women/12.jpg',
-        bio: "sesa's world 🎧\nbisnis/joki DM aja!",
-        bgm: 'assets/second/wave-to-earth-seasons.mp3', // SET MUSIC PATH AKUN 2
+        fullName: 'Ana',
+        profilePic: 'assets/first/foto-bingkai.png',
+        bio: "just ana 🎀\nspam dump here!",
+        bgm: 'assets/second/wave-to-earth-seasons.mp3', 
         postsCount: 7,
         followers: '856',
         following: '432',
         stories: [
-            { username: 'Your story', img: 'https://randomuser.me/api/portraits/women/12.jpg', isYourStory: true },
-            { username: 'jokiset.hehe', img: 'https://randomuser.me/api/portraits/men/11.jpg', isLive: true },
-            { username: 'azkamsptra_', img: 'https://randomuser.me/api/portraits/men/22.jpg' },
-            { username: 'client_01', img: 'https://randomuser.me/api/portraits/women/8.jpg' }
+            { username: 'Your story', img: 'assets/first/foto-bingkai.png', isYourStory: true },
+            { username: 'putri.ayuu', img: 'assets/teman1.png' },
+            { username: 'salsabila_99', img: 'assets/teman2.png' },
+            { username: 'cintiaa.x', img: 'assets/teman5.png' }
         ],
         dms: [
-            { user: 'jokiset.hehe', img: 'https://randomuser.me/api/portraits/men/11.jpg', msg: 'p joki', time: '1h', note: 'start from 20k' },
-            { user: 'azkamsptra_', img: 'https://randomuser.me/api/portraits/men/22.jpg', msg: 'Sent an attachment', time: '2h', isUnread: true, note: 'Tidur woy' },
-            { user: 'client_01', img: 'https://randomuser.me/api/portraits/women/8.jpg', msg: 'Udah di trf ya kak', time: '1d' }
+            { user: 'putri.ayuu', img: 'assets/teman1.png', msg: 'Na, besok jadi jalan?', time: '1h', note: 'lagi pengen seblak' },
+            { user: 'salsabila_99', img: 'assets/teman2.png', msg: 'Lucu bgt fotonyaaa', time: '2h', isUnread: true, note: 'Tidur woy' },
+            { user: 'cintiaa.x', img: 'assets/teman5.png', msg: 'Wkwk bener juga sih', time: '1d' }
         ],
         posts: Array.from({length: 7}, (_, i) => ({
             id: `s${i}`,
             username: 'anaa.mov',
-            profilePic: 'https://randomuser.me/api/portraits/women/12.jpg',
+            profilePic: 'assets/first/foto-bingkai.png',
             type: 'standard',
             music: 'Wave to Earth · Seasons',
             likes: `${Math.floor(Math.random() * 5000)}`,
             isLiked: false,
             caption: `Vibes ${i+1} ✨`,
             time: `${i+2} HOURS AGO`,
-            slides: [{ img: `https://picsum.photos/600/600?random=${i}`, elements: [] }]
+            slides: [{ img: `assets/second/foto${(i % 8) + 4}.jpg`, elements: [] }]
         })),
         highlights: []
     }
@@ -524,7 +550,7 @@ function renderProfile() {
     const grid = document.getElementById('profile-grid');
     if (grid) {
         grid.innerHTML = '';
-        account.posts.forEach(post => {
+        account.posts.filter(post => post.username === account.username).forEach(post => {
             const postEl = document.createElement('div');
             postEl.className = 'grid-photo';
             postEl.innerHTML = `<img src="${post.slides[0].img}">`;

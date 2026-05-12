@@ -131,7 +131,7 @@ body { font-family: 'Inter', sans-serif; background-color: #1a1a1a; color: var(-
 .dm-username { font-weight: 500; font-size: 14px; }
 .dm-last-msg { font-size: 13px; color: var(--gray-text); }
 
-.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: none; flex-direction: column; justify-content: flex-end; z-index: 1000; }
+.modal { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; flex-direction: column; justify-content: flex-end; z-index: 1000; }
 .modal.active { display: flex; }
 .modal-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--modal-overlay); }
 .bottom-sheet { background: var(--bottom-sheet-bg); border-radius: 20px 20px 0 0; padding: 20px 0; z-index: 1001; transform: translateY(100%); transition: transform 0.3s ease-out; }

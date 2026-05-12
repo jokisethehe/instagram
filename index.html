@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Instagram Scrapbook AU</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Homemade+Apple&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode"> 
+    
+    <audio id="bg-music" loop></audio>
+
+    <div id="app">
+        <div id="splash-screen" class="screen active">
+            <div class="splash-logo"><i class="fa-brands fa-instagram"></i></div>
+            <div class="splash-footer">
+                <p>from</p>
+                <div class="meta-logo"><i class="fa-solid fa-infinity"></i><span>Meta</span></div>
+            </div>
+        </div>
+
+        <div id="login-screen" class="screen hidden">
+            <div class="login-container">
+                <h1 class="ig-logo-text">Instagram</h1>
+                <div class="profile-pic-container">
+                    <img src="assets/first/foto1.png" alt="Profile" class="login-profile-pic" id="login-pic">
+                    <p class="welcome-text">Welcome back, <span id="login-username">pwetianaa__</span></p>
+                </div>
+                <button id="login-btn" class="btn-primary">Log In</button>
+                <p class="switch-account-text" id="login-switch-btn">Switch accounts</p>
+            </div>
+        </div>
+
+        <div id="main-app" class="screen hidden">
+            <header class="app-header">
+                <div class="header-left"><h1 class="ig-logo-text">Instagram</h1></div>
+                <div class="header-icons">
+                    <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+                    <div class="icon-container" id="dm-btn">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                </div>
+            </header>
+            <div class="main-content" id="main-feed-content">
+                <div class="stories-container" id="stories-bar"></div>
+                <div class="feed-container" id="feed"></div>
+            </div>
+        </div>
+
+        <div id="profile-screen" class="screen hidden">
+            <header class="app-header profile-header">
+                <div class="header-left" id="profile-switcher-trigger" style="cursor: pointer;">
+                    <i class="fa-solid fa-lock" style="font-size: 12px;"></i>
+                    <h2 class="profile-username" id="profile-username-header" style="margin-left: 5px; font-size: 16px;">pwetianaa__</h2>
+                    <i class="fa-solid fa-chevron-down text-xs" style="margin-left: 5px;"></i>
+                </div>
+                <div class="header-icons">
+                    <i class="fa-regular fa-square-plus"></i>
+                    <i class="fa-solid fa-bars" id="settings-btn" style="cursor: pointer;"></i>
+                </div>
+            </header>
+            
+            <div class="main-content">
+                <div class="profile-info">
+                    <div class="profile-top-row">
+                        <img src="assets/first/foto1.png" class="profile-main-pic" id="profile-pic">
+                        <div class="stats-row">
+                            <div class="stat-item"><span class="stat-count" id="post-count">1</span><span class="stat-label">posts</span></div>
+                            <div class="stat-item"><span class="stat-count" id="follower-count">1.209</span><span class="stat-label">followers</span></div>
+                            <div class="stat-item"><span class="stat-count" id="following-count">1.033</span><span class="stat-label">following</span></div>
+                        </div>
+                    </div>
+                    <div class="profile-bio-section">
+                        <div class="profile-display-name" id="profile-full-name">anaa</div>
+                        <div class="profile-status-badge"><i class="fa-solid fa-music"></i> @azkamsptra_</div>
+                        <div class="profile-bio-text" id="profile-description">Can't decide...</div>
+                    </div>
+                    <div class="profile-buttons">
+                        <button class="profile-btn">Edit profile</button>
+                        <button class="profile-btn">Share profile</button>
+                        <button class="profile-btn icon-btn"><i class="fa-solid fa-user-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="highlights-container" id="highlights"></div>
+
+                <div class="profile-tabs">
+                    <div class="tab active"><i class="fa-solid fa-table-cells"></i></div>
+                    <div class="tab"><i class="fa-solid fa-film"></i></div>
+                    <div class="tab"><i class="fa-regular fa-id-card"></i></div>
+                </div>
+                <div class="profile-grid" id="profile-grid"></div>
+            </div>
+        </div>
+
+        <div id="dm-screen" class="screen hidden">
+            <header class="app-header">
+                <div class="header-left">
+                    <i class="fa-solid fa-arrow-left" id="dm-back" style="cursor: pointer; margin-right: 15px;"></i>
+                    <h2 class="profile-username" id="dm-current-user">pwetianaa__ <i class="fa-solid fa-chevron-down text-xs"></i></h2>
+                </div>
+                <div class="header-icons"><i class="fa-solid fa-video"></i><i class="fa-solid fa-pen-to-square"></i></div>
+            </header>
+            <div class="main-content">
+                <div class="dm-notes-container" id="dm-notes"></div>
+                <div class="dm-search"><input type="text" placeholder="Search"></div>
+                <div style="display: flex; justify-content: space-between; padding: 0 16px 10px; font-weight: 600;">
+                    <span>Messages</span>
+                    <span style="color: var(--primary-color);">Requests</span>
+                </div>
+                <div class="dm-list" id="dm-list"></div>
+            </div>
+        </div>
+
+        <nav class="bottom-nav hidden" id="bottom-nav">
+            <i class="fa-solid fa-house active" id="nav-home"></i>
+            <i class="fa-solid fa-magnifying-glass" id="nav-search"></i>
+            <i class="fa-regular fa-square-plus" id="nav-add"></i>
+            <i class="fa-solid fa-film" id="nav-reels"></i>
+            <img src="assets/first/foto1.png" class="nav-profile" id="nav-profile">
+        </nav>
+
+        <div id="account-switcher-modal" class="modal hidden">
+            <div class="modal-content bottom-sheet">
+                <div class="drag-handle"></div>
+                <div class="settings-list" id="account-list-container"></div>
+            </div>
+            <div class="modal-overlay" id="account-switcher-overlay"></div>
+        </div>
+
+        <div id="settings-modal" class="modal hidden">
+            <div class="modal-content bottom-sheet">
+                <div class="drag-handle"></div>
+                <div class="settings-list">
+                    <div class="settings-item"><i class="fa-solid fa-gear"></i><span>Settings and privacy</span></div>
+                    <div class="settings-item" id="theme-toggle"><i class="fa-solid fa-moon"></i><span>Switch appearance</span></div>
+                    <div class="settings-item"><i class="fa-solid fa-clock-rotate-left"></i><span>Your activity</span></div>
+                    <div class="settings-item logout" id="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Log out</span></div>
+                </div>
+            </div>
+            <div class="modal-overlay" id="settings-overlay"></div>
+        </div>
+
+        <div id="custom-alert" class="custom-alert"><span class="alert-emoji"></span><span class="alert-text"></span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
